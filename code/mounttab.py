@@ -3,7 +3,7 @@ import os
 def mount_details():
 	if os.path.exists('/proc/mounts'):
 		df = open('/proc/mounts')
-		for line in fd:
+		for line in df:
 			line = line.strip()
 			words = line.split()
 			print('{} on {} type {}'.format(words[0],words[1],words[2]), end=' ')
