@@ -2,7 +2,7 @@ import os
 
 def parse_mounts():
     """
-    ·ÖÎö /proc/mounts ²¢ ·µ»ØÔª×æµÄÁĞ±í
+    åˆ†æ /proc/mounts å¹¶ è¿”å›å…ƒç¥–çš„åˆ—è¡¨
     """
     result = []
     if os.path.exists('/proc/mounts'):
@@ -20,7 +20,7 @@ def parse_mounts():
 
 def mount_details():
     """
-    ´òÓ¡¹ÒÔØÏêÏ¸ĞÅÏ¢
+    æ‰“å°æŒ‚è½½è¯¦ç»†ä¿¡æ¯
     """
     result = parse_mounts()
     for line in result:
