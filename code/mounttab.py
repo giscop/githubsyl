@@ -11,7 +11,7 @@ def mount_details():
 				print('({})'.format(' '.join(words[3:-2])))
 			else:
 				print()
-		fd.close()
+		df.close()
 		
 if __name__ == '__main__':
 	mount_details()
